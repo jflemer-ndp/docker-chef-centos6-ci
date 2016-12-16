@@ -5,7 +5,7 @@ ARG EL=6
 ARG CHANNEL=stable
 ARG VERSION=12.5.1
 
-RUN yum -y install centos-release-scl cpio make wget && \
+RUN yum -y install centos-release-scl cpio make rsync wget && \
     yum -y install devtoolset-4-toolchain && \
     yum -y update; \
     yum clean all
